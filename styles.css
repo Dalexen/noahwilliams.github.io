@@ -51,7 +51,8 @@ header nav ul li a:hover {
 
 /* Hero section styles */
 .hero {
-    background: #007BFF;
+    background-size: cover;
+    background-position: center;
     color: #fff;
     text-align: center;
     padding: 4rem 0;
@@ -70,7 +71,7 @@ header nav ul li a:hover {
 .hero .btn {
     display: inline-block;
     padding: 0.7rem 1.4rem;
-    background: #0056b3;
+    background: #007BFF;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -78,7 +79,7 @@ header nav ul li a:hover {
 }
 
 .hero .btn:hover {
-    background: #003f7f;
+    background: #0056b3;
 }
 
 /* About section styles */
@@ -140,6 +141,34 @@ header nav ul li a:hover {
 
 .contact button:hover {
     background: #0056b3;
+}
+
+/* Downloads section styles */
+.downloads {
+    padding: 2rem 0;
+}
+
+.downloads h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.downloads .file-list {
+    list-style: none;
+    padding: 0;
+}
+
+.downloads .file-list li {
+    margin: 0.5rem 0;
+}
+
+.downloads .file-list a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.downloads .file-list a:hover {
+    text-decoration: underline;
 }
 
 /* Footer styles */
