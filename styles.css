@@ -1,9 +1,10 @@
-/* Base styles */
+/* Dark Theme */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    line-height: 1.6;
-    color: #333;
+    padding: 0;
+    color: #f0f0f0;
+    background-color: #121212;
 }
 
 .container {
@@ -12,23 +13,25 @@ body {
     max-width: 1200px;
 }
 
-/* Header styles */
+/* Header Styles */
 header {
-    background: #333;
-    color: #fff;
+    background-color: #1a1a1a;
     padding: 1rem 0;
+    border-radius: 15px;
 }
 
 header .logo {
-    margin: 0;
     font-size: 1.5rem;
+    margin: 0;
+    color: #f0f0f0;
 }
 
 header nav ul {
-    padding: 0;
     list-style: none;
+    padding: 0;
     display: flex;
     justify-content: flex-end;
+    border-radius: 15px;
 }
 
 header nav ul li {
@@ -36,80 +39,140 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #d16ba5;
     font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header nav ul li a.active {
-    text-decoration: underline;
+    background-color: #d16ba5;
+    color: #121212;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #d16ba5;
+    color: #121212;
 }
 
-/* Hero section styles */
+/* Hero Section */
 .hero {
     background-size: cover;
     background-position: center;
-    color: #fff;
     text-align: center;
+    color: #f0f0f0;
     padding: 4rem 0;
+    animation: fadeIn 1.5s ease-in-out;
+    border-radius: 15px;
 }
 
 .hero h2 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
 }
 
 .hero .btn {
     display: inline-block;
+    margin-top: 1rem;
     padding: 0.7rem 1.4rem;
-    background: #007BFF;
-    color: #fff;
+    background-color: #d16ba5;
+    color: #121212;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .hero .btn:hover {
-    background: #0056b3;
+    background-color: #f0f0f0;
+    color: #121212;
+    transform: scale(1.05);
 }
 
-/* About section styles */
-.about {
+/* Projects Section */
+.projects {
     padding: 2rem 0;
+    background-color: #1a1a1a;
+    animation: fadeIn 1.5s ease-in-out;
+    border-radius: 15px;
 }
 
-.about h2 {
-    text-align: center;
+.projects h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #f0f0f0;
+}
+
+.projects p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: #bbb;
+}
+
+.projects .project-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.projects .project-list li {
     margin-bottom: 1rem;
 }
 
-.about p {
-    text-align: center;
+.projects .project-list a {
+    text-decoration: none;
+    color: #f0f0f0;
     font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
-/* Contact section styles */
-.contact {
-    padding: 2rem 0;
+.projects .project-list a:hover {
+    color: #d16ba5;
+    transform: scale(1.05);
 }
 
-.contact h2 {
+.projects .btn {
+    background-color: #d16ba5;
+    color: #121212;
+    text-decoration: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.projects .btn:hover {
+    background-color: #f0f0f0;
+    color: #121212;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
     text-align: center;
-    margin-bottom: 1rem;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 15px;
 }
 
+/* Form Styles */
 .contact form {
     max-width: 600px;
     margin: 0 auto;
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contact label {
@@ -122,68 +185,40 @@ header nav ul li a:hover {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    color: #f0f0f0;
 }
 
 .contact button {
     display: block;
     width: 100%;
     padding: 0.7rem;
-    background: #007BFF;
-    color: #fff;
+    background: #d16ba5;
+    color: #121212;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .contact button:hover {
-    background: #0056b3;
+    background: #f0f0f0;
+    color: #121212;
+    transform: scale(1.05);
 }
 
-/* Downloads section styles */
-.downloads {
-    padding: 2rem 0;
-}
-
-.downloads h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.downloads .file-list {
-    list-style: none;
-    padding: 0;
-}
-
-.downloads .file-list li {
-    margin: 0.5rem 0;
-}
-
-.downloads .file-list a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.downloads .file-list a:hover {
-    text-decoration: underline;
-}
-
-/* Footer styles */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-footer a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

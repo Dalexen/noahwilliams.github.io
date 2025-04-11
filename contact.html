@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Noah Williams</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,6 +15,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
                     <li><a href="downloads.html">Downloads</a></li>
                 </ul>
@@ -23,24 +25,27 @@
     <section class="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>If you’d like to get in touch, please email me at <a href="mailto:imnotselfabsorbed@noahwilliams.cc">imnotselfabsorbed@noahwilliams.cc</a>.</p>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit" class="btn">Send</button>
-            </form>
+            <div class="contact-card">
+                <p>If you’d like to get in touch, feel free to send me an email or use the form below. I’ll get back to you as soon as possible!</p>
+                <form action="https://formspree.io/f/mnqyllvb" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="_replyto" placeholder="Your email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                    
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
         </div>
     </section>
     <footer>
         <div class="container">
             <p>&copy; 2025 Noah Williams</p>
+            <p id="programmer-joke"></p>
         </div>
     </footer>
 </body>
